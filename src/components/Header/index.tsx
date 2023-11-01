@@ -38,20 +38,20 @@ const Header = ({ t }: any) => {
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+          <Span>{"About"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+          <Span>{"Mission"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+          <Span>{"Product"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{"Contact"}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -63,7 +63,12 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-          <img src={`/img/icons/logoText.png`} alt={"logo"} width={"150"} height={"100"} />
+            <img
+              src={`/img/icons/logoText.png`}
+              alt={"logo"}
+              width={"150"}
+              height={"100"}
+            />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -90,4 +95,4 @@ const Header = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Header);
+export default Header;

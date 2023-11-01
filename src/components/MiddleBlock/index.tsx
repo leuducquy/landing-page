@@ -12,7 +12,13 @@ interface MiddleBlockProps {
   t: any;
 }
 
-const MiddleBlock = ({ title, content, content1,button, t }: MiddleBlockProps) => {
+const MiddleBlock = ({
+  title,
+  content,
+  content1,
+  button,
+  t,
+}: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -25,12 +31,12 @@ const MiddleBlock = ({ title, content, content1,button, t }: MiddleBlockProps) =
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              <Content>{t(content1)}</Content>
+              <h6>{title}</h6>
+              <Content>{content}</Content>
+              <Content>{content1}</Content>
               {button && (
                 <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {t(button)}
+                  {button}
                 </Button>
               )}
             </Col>

@@ -56,7 +56,7 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:leuducquy@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
@@ -83,9 +83,10 @@ const Footer = ({ t }: any) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>360 Giải Phóng</Para>
+              <Para>Thanh Xuân - Hà Nội</Para>
+              <Para>Viet Nam</Para>
+              <Para>Tel : +84966494779</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
@@ -127,7 +128,7 @@ const Footer = ({ t }: any) => {
         </Container>
       </FooterSection>
       <Extra>
-        <Container border={true}>
+        {/* <Container border={true}>
           <Row
             justify="space-between"
             align="middle"
@@ -168,7 +169,7 @@ const Footer = ({ t }: any) => {
               </a>
             </FooterContainer>
           </Row>
-        </Container>
+        </Container> */}
       </Extra>
     </>
   );

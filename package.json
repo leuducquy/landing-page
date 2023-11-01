@@ -2,7 +2,7 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://minhlq-0928.github.io/landing-page/",
+  "homepage": "https://leuducquy.github.io/landing-page/",
   "dependencies": {
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.69",

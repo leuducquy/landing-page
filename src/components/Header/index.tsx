@@ -63,7 +63,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-          <img src={`/img/icons/logoText.png`} alt={"logo"} width={"150"} height={"100"} />
+          <img src={`${process.env.PUBLIC_URL}/img/icons/logoText.png`} alt={"logo"} width={"150"} height={"100"} />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

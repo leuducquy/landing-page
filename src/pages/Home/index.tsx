@@ -18,44 +18,44 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
+        title={"introTitle"}
+        content={"introText"}
         button={IntroContent.button}
         icon="developer.svg"
         id="intro"
       />
       <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        content1={MiddleBlockContent.text1}
-        button={MiddleBlockContent.button}
+        title={"middleTitle"}
+        content={"middleText"}
+        content1={"middleText1"}
+        button={"middleButton"}
       />
       
       <ContentBlock
         type="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
+        title={"aboutTitle"}
+        content={"aboutText"}
         section={AboutContent.section}
         icon="graphs.svg"
         id="about"
       />
       <ContentBlock
         type="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
+        title={"misionTitle"}
+        content={"misionText"}
         icon="product-launch.svg"
         id="mission"
       />
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={"productTitle"}
+        content={"productText"}
         icon="waving.svg"
         id="product"
       />
       <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
+        title={"contactTitle"}
+        content={"contactText"}
         id="contact"
       />
     </Container>

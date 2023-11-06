@@ -24,5 +24,21 @@
   "Name" : "Name",
   "Your Name": "Your Name",
   "Email" : "Email",
-  "Your Email": "Your Email"
+  "Your Email": "Your Email",
+  "aboutTitle": "Light, fast & responsive",
+  "aboutText": "IT Consulting Service System Integration, IT Infrastructure operation service, Training Service",
+  "introTitle": "We provide services from Asia for efficiency business and enjoyable life",
+  "introText":"IT company King Solution  works in the field of software development for all customers. We are aiming to become one of the best software development companies in Vietnam. We develop business softwares for enterprise management, as well as Web-based applications (React-Native,Reactjs,Nodejs,IOS,Android,Python,Ruby,Java, .NET, PHP, Typescript,JavaScript,Html,css etc.)",
+  "middleTitle": "We try to adopt cutting-edge technologies and cooperate customer business success.We will create applications following customer's requests",
+  "middleText": "Business Web applications",
+  "middleText1": "Mobile applications (Android / iOS)",
+  "middleButton": "Get started",
+  "misionTitle": "Build application fast with high performance",
+  "misionText": "We have developers with many years experience and working with high performance for app ,web development",
+  "productTitle": "Development equipment",
+  "productText": "We understand that, the equiment for developer is very important then we always provide the latest version of device such as iphone , macbook, android for our staff so then they can make the best application for our customer.",
+  "contactTitle": "Contact Us",
+  "contactText": "Please contact us if you have any question, We are always welcome.Thank you"
+
+
 }

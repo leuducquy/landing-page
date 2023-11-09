@@ -5,7 +5,10 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
-
+import homeimage from "../../img/homeimage.jpeg"
+import grapimage from "../../img/grapimage.jpg"
+import productLuach from "../../img/productLuach.jpeg"
+import equiptment from "../../img/equiptment.png"
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -22,6 +25,7 @@ const Home = () => {
         content={"introText"}
         button={IntroContent.button}
         icon="developer.svg"
+        image={homeimage}
         id="intro"
       />
       <MiddleBlock
@@ -37,6 +41,7 @@ const Home = () => {
         content={"aboutText"}
         section={AboutContent.section}
         icon="graphs.svg"
+        image={grapimage}
         id="about"
       />
       <ContentBlock
@@ -44,6 +49,7 @@ const Home = () => {
         title={"misionTitle"}
         content={"misionText"}
         icon="product-launch.svg"
+        image={productLuach}
         id="mission"
       />
       <ContentBlock
@@ -51,6 +57,7 @@ const Home = () => {
         title={"productTitle"}
         content={"productText"}
         icon="waving.svg"
+        image={equiptment}
         id="product"
       />
       <Contact

@@ -55,7 +55,7 @@ const RightBlock = ({
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
             {/* <SvgIcon src={icon} width="100%" height="100%" /> */}
-            <img src={image} alt="Logo" />
+            <img src={image}  style={{ width: "100%", height: "100%" }} alt="Logo" />
           </Col>
         </Row>
       </Fade>

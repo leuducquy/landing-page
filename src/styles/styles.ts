@@ -3,13 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const Styles = createGlobalStyle`
 
     @font-face {
-        font-family: "Motiva Sans Light";
+        font-family: "times-new-roman-light";
         src: url("/fonts/times-new-roman-light.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
-        font-family: "Motiva Sans Bold";
+        font-family: "times-new-roma-bold";
         src: url("/fonts/times-new-roma-bold.ttf") format("truetype");
         font-style: normal;
     }
@@ -57,9 +57,9 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: 'Motiva Sans Bold';
         color: #18216d;
-        font-size: 56px;
+        font-size: 40px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {

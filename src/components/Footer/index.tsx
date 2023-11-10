@@ -94,7 +94,7 @@ const Footer = ({ t }: any) => {
           </Row>
         </Container>
       </FooterSection>
-      <Extra>
+      {/* <Extra>
          <Container border={true}> 
           <Row
             justify="space-between"
@@ -137,7 +137,7 @@ const Footer = ({ t }: any) => {
             </FooterContainer>
           </Row>
         </Container> 
-      </Extra>
+      </Extra> */}
     </>
   );
 };

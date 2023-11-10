@@ -9,6 +9,7 @@ import homeimage from "../../img/homeimage.jpeg"
 import grapimage from "../../img/grapimage.jpg"
 import productLuach from "../../img/productLuach.jpeg"
 import equiptment from "../../img/equiptment.png"
+import contactUs from "../../img/contactUs.jpeg"
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -45,7 +46,7 @@ const Home = () => {
         id="about"
       />
       <ContentBlock
-        type="right"
+        type="left"
         title={"misionTitle"}
         content={"misionText"}
         icon="product-launch.svg"
@@ -64,6 +65,7 @@ const Home = () => {
         title={"contactTitle"}
         content={"contactText"}
         id="contact"
+        image={contactUs}
       />
     </Container>
   );

@@ -3,6 +3,7 @@ export interface ContactProps {
   content: string;
   id: string;
   t: any;
+  image:any;
 }
 
 export interface ValidationTypeProps {

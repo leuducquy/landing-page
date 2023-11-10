@@ -34,3 +34,8 @@ export const ButtonContainer = styled("div")`
     padding-top: 0.75rem;
   }
 `;
+export const SocialLink = styled("a")`
+  padding:20;
+  marginTop:20;
+  height:4.775rem;
+`;

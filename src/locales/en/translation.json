@@ -38,7 +38,11 @@
   "productTitle": "Development equipment",
   "productText": "We understand that, the equiment for developer is very important then we always provide the latest version of device such as iphone , macbook, android for our staff so then they can make the best application for our customer.",
   "contactTitle": "Contact Us",
-  "contactText": "Please contact us if you have any question, We are always welcome.Thank you"
+  "contactText": "Please contact us if you have any question, We are always welcome.Thank you",
+  "callUs": "Call us",
+  "fbContact": "Contact via Facebook Messenger",
+  "wachtups": "Contact via WhatsApp",
+  "zaloContact": "Contact via Zalo"
 
 
 }

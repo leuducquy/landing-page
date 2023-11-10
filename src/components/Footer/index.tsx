@@ -27,10 +27,7 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-
+ 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
       <a
@@ -69,15 +66,7 @@ const Footer = ({ t }: any) => {
                 {t("Software Principles")}
               </Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
-              </Large>
-            </Col>
+            
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -90,45 +79,23 @@ const Footer = ({ t }: any) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
-              <Large left="true" to="/landing-page/">
+              <Large left="true" to="/">
                 {t("About")}
               </Large>
-              <Large left="true" to="/landing-page/">
+              <Large left="true" to="/">
                 {t("Blog")}
               </Large>
-              <Large left="true" to="/landing-page/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/landing-page/">
+             
+              <Large left="true" to="/">
                 {t("Careers & Culture")}
               </Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-            </Col>
+            
           </Row>
         </Container>
       </FooterSection>
       <Extra>
-        {/* <Container border={true}>
+         <Container border={true}> 
           <Row
             justify="space-between"
             align="middle"
@@ -169,7 +136,7 @@ const Footer = ({ t }: any) => {
               </a>
             </FooterContainer>
           </Row>
-        </Container> */}
+        </Container> 
       </Extra>
     </>
   );

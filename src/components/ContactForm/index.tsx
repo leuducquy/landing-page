@@ -62,7 +62,7 @@ const Contact = ({ title, content, id, t,image }: ContactProps) => {
         <SocialLink href="https://m.me/leuducquy">
           <FontAwesomeIcon size="2x" icon={faFacebookMessenger} />  {t("fbContact")}
         </SocialLink>
-        <SocialLink href="https://zalo.me/your_zalo_id">
+        <SocialLink href="https://zalo.me/0966494779">
         <SvgIcon
                     src="zalo.svg"
                     aria-label="homepage"

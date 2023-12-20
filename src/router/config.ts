@@ -1,8 +1,13 @@
 const routes = [
   {
-    path: ["/", "/Home"],
+    path: "/Home",
     exact: false,
     component: "Home",
+  },
+  {
+    path: "/product",
+    exact: false,
+    component: "Product",
   },
 ];
 

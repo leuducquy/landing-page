@@ -4,6 +4,7 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import { useNavigate} from "react-router-dom";
 import {
   HeaderSection,
   LogoContainer,
@@ -19,6 +20,12 @@ import { LanguageSwitch, LanguageSwitchContainer } from "../Footer/styles";
 import i18n from "../../translation";
 
 const Header = ({ t }: any) => {
+  const navigate = useNavigate();
+
+  const navigateToProduct = () => {
+    console.log("prodfuct")
+      navigate("/product");
+  }
   const [visible, setVisibility] = useState(false);
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
@@ -41,18 +48,35 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <CustomNavLinkSmall onClick={() =>
+          {
+            navigate("/");
+            // scrollTo("about")
+          } 
+        }>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <CustomNavLinkSmall onClick={() =>
+          {
+            navigate("/");
+            // scrollTo("about")
+          } 
+        }>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
+       
+        <CustomNavLinkSmall onClick={() =>navigateToProduct()}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
+    
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() =>
+            {
+              navigate("/");
+              // scrollTo("about")
+            } 
+          }
         >
           <Span>
             <Button>{t("Contact")}</Button>

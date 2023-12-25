@@ -4,6 +4,7 @@ import beachImage from "../../img/borabora1.jpg"
 import gymImage from "../../img/gym.jpeg"
 import shoesImage from "../../img/hero-img.png"
 import foofImage from "../../img/foodimage.avif"
+import './product.css'
 // Sample data for the card list
 const cardData = [
   {
@@ -37,14 +38,14 @@ const cardData = [
 ];
 const Product = () => {
   return (
-    <div  style={{ textAlign: 'center' , paddingBottom: 20, paddingLeft:10,paddingRight:10}}>
-      <h1>Product</h1>
-    {cardData.map((card) => (
-     
-        <MyCard card={card} />
-     
-    ))}
-  </div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>Product</h1>
+      <div className="card-container">
+        {cardData.map((card) => (
+          <MyCard key={card.id} card={card} />
+        ))}
+      </div>
+    </div>
   );
 };
 export default Product

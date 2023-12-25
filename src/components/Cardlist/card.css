@@ -1,0 +1,33 @@
+/* YourComponent.css */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .custom-card {
+    max-width: 400px;
+    margin: 0 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  @media (min-width: 600px) {
+    /* Display horizontally on screens wider than 600px */
+    .custom-card {
+      flex: 0 0 48%; /* Adjust the width as needed */
+    }
+  }
+  
+  @media (max-width: 599px) {
+    /* Display vertically on screens 599px and below */
+    .custom-card {
+      flex: 0 0 100%;
+    }
+  }
+  

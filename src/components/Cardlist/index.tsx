@@ -19,9 +19,9 @@ const MyCard: React.FC<MyCardProps> = ({ card })  => (
   <CardActionArea onClick={() => { window.location.href = card.url }}>
     <CardMedia
       component="img"
-       height="200"
+     
       image={card.imageUrl}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: 'contain' }}
       alt={card.title}
     />
     <CardContent>

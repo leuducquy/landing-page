@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8c89ace0.css",
-    "main.js": "/static/js/main.c27cef2a.js",
+    "main.js": "/static/js/main.daaf37be.js",
     "static/js/609.1637b4ef.chunk.js": "/static/js/609.1637b4ef.chunk.js",
     "static/js/281.ca042f70.chunk.js": "/static/js/281.ca042f70.chunk.js",
     "static/js/333.aea11245.chunk.js": "/static/js/333.aea11245.chunk.js",
@@ -12,13 +12,15 @@
     "static/media/equiptment.png": "/static/media/equiptment.bb35fe637bb0eda5a17a.png",
     "static/media/borabora1.jpg": "/static/media/borabora1.e6c4841f299365fdfa10.jpg",
     "static/media/hero-img.png": "/static/media/hero-img.60cf35090c63feb31288.png",
+    "static/media/watch.jpeg": "/static/media/watch.7b6ea86af353e516a678.jpeg",
     "static/media/productLuach.jpeg": "/static/media/productLuach.1561cf092fe16944ae5e.jpeg",
     "static/media/grapimage.jpg": "/static/media/grapimage.f8dfbf401f593c5667e7.jpg",
+    "static/media/process-1.png": "/static/media/process-1.26079946a7ad553f42cb.png",
     "static/media/foodimage.avif": "/static/media/foodimage.dfb865a7e3d8eea17b93.avif",
     "static/media/homeimage.jpeg": "/static/media/homeimage.26a789f9729ed8f0c824.jpeg",
     "index.html": "/index.html",
     "main.8c89ace0.css.map": "/static/css/main.8c89ace0.css.map",
-    "main.c27cef2a.js.map": "/static/js/main.c27cef2a.js.map",
+    "main.daaf37be.js.map": "/static/js/main.daaf37be.js.map",
     "609.1637b4ef.chunk.js.map": "/static/js/609.1637b4ef.chunk.js.map",
     "281.ca042f70.chunk.js.map": "/static/js/281.ca042f70.chunk.js.map",
     "333.aea11245.chunk.js.map": "/static/js/333.aea11245.chunk.js.map",
@@ -28,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.8c89ace0.css",
-    "static/js/main.c27cef2a.js"
+    "static/js/main.daaf37be.js"
   ]
 }

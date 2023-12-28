@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8c89ace0.css",
-    "main.js": "/static/js/main.daaf37be.js",
+    "main.js": "/static/js/main.c3ad548e.js",
     "static/js/609.1637b4ef.chunk.js": "/static/js/609.1637b4ef.chunk.js",
     "static/js/281.ca042f70.chunk.js": "/static/js/281.ca042f70.chunk.js",
     "static/js/333.aea11245.chunk.js": "/static/js/333.aea11245.chunk.js",
@@ -16,11 +16,12 @@
     "static/media/productLuach.jpeg": "/static/media/productLuach.1561cf092fe16944ae5e.jpeg",
     "static/media/grapimage.jpg": "/static/media/grapimage.f8dfbf401f593c5667e7.jpg",
     "static/media/process-1.png": "/static/media/process-1.26079946a7ad553f42cb.png",
+    "static/media/audi-box.png": "/static/media/audi-box.b3263089022dd5e025dc.png",
     "static/media/foodimage.avif": "/static/media/foodimage.dfb865a7e3d8eea17b93.avif",
     "static/media/homeimage.jpeg": "/static/media/homeimage.26a789f9729ed8f0c824.jpeg",
     "index.html": "/index.html",
     "main.8c89ace0.css.map": "/static/css/main.8c89ace0.css.map",
-    "main.daaf37be.js.map": "/static/js/main.daaf37be.js.map",
+    "main.c3ad548e.js.map": "/static/js/main.c3ad548e.js.map",
     "609.1637b4ef.chunk.js.map": "/static/js/609.1637b4ef.chunk.js.map",
     "281.ca042f70.chunk.js.map": "/static/js/281.ca042f70.chunk.js.map",
     "333.aea11245.chunk.js.map": "/static/js/333.aea11245.chunk.js.map",
@@ -30,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.8c89ace0.css",
-    "static/js/main.daaf37be.js"
+    "static/js/main.c3ad548e.js"
   ]
 }

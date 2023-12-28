@@ -6,6 +6,7 @@ import shoesImage from "../../img/hero-img.png"
 import foofImage from "../../img/foodimage.avif"
 import watchImage from "../../img/watch.jpeg"
 import dentistImage from "../../img/process-1.png"
+import carImage from "../../img/borabora1.png"
 import './product.css'
 // Sample data for the card list
 const cardData = [
@@ -50,6 +51,13 @@ const cardData = [
     description: 'Welcome to our Dental Care Store, where your oral health is our top priority! At our store, we are committed to providing you with a comprehensive range of dental care products to help you achieve and maintain a bright, healthy smile. From daily oral hygiene essentials to specialized treatments, we have got everything you need to keep your teeth and gums in optimal condition.',
     imageUrl: dentistImage,
     url:"https://dentalcare-leuducquy.vercel.app/"
+  },
+  {
+    id: 7,
+    title: 'Car Rental',
+    description: 'mbark on a hassle-free adventure with our premier car rental service that puts you in the driver  seat of your travel experience. At Viet Nam Auto , we redefine convenience, offering a fleet of meticulously maintained vehicles to suit every journey. Whether it is a spontaneous road trip, a business excursion, or a family vacation, our diverse range of cars ensures you find the perfect match for your needs. Enjoy the freedom of the open road with our user-friendly booking platform, transparent pricing, and top-notch customer service. We believe in making your travel dreams a reality, one ride at a time. Your next unforgettable adventure begins with Viet Nam Auto',
+    imageUrl: carImage,
+    url:"https://carrental-leuducquy.vercel.app/"
   },
 ];
 const Product = () => {

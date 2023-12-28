@@ -6,7 +6,7 @@ import shoesImage from "../../img/hero-img.png"
 import foofImage from "../../img/foodimage.avif"
 import watchImage from "../../img/watch.jpeg"
 import dentistImage from "../../img/process-1.png"
-import carImage from "../../img/borabora1.png"
+import carImage from "../../img/audi-box.png"
 import './product.css'
 // Sample data for the card list
 const cardData = [

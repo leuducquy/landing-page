@@ -14,7 +14,7 @@ const Router = () => {
       <Header />
       <Routes>
       <Route  path="/" element={<Home/>}/>
-          <Route  path="/Product" element={<Product/>}/>
+          <Route  path="/product" element={<Product/>}/>
       </Routes>
       <Footer />
     </Suspense>

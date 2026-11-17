@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   HeaderSection,
   LogoContainer,
@@ -23,9 +23,8 @@ const Header = ({ t }: any) => {
   const navigate = useNavigate();
 
   const navigateToProduct = () => {
-    console.log("prodfuct")
-      navigate("/product");
-  }
+    navigate("/product");
+  };
   const [visible, setVisibility] = useState(false);
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
@@ -39,44 +38,28 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
     return (
       <>
-        <CustomNavLinkSmall onClick={() =>
-          {
-            navigate("/");
-            // scrollTo("about")
-          } 
-        }>
+        <CustomNavLinkSmall onClick={() => {
+          navigate("/");
+        }}>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() =>
-          {
-            navigate("/");
-            // scrollTo("about")
-          } 
-        }>
+        <CustomNavLinkSmall onClick={() => {
+          navigate("/");
+        }}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-       
-        <CustomNavLinkSmall onClick={() =>navigateToProduct()}>
+
+        <CustomNavLinkSmall onClick={() => navigateToProduct()}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
-    
+
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() =>
-            {
-              navigate("/");
-              // scrollTo("about")
-            } 
-          }
+          onClick={() => {
+            navigate("/");
+          }}
         >
           <Span>
             <Button>{t("Contact")}</Button>
@@ -93,34 +76,32 @@ const Header = ({ t }: any) => {
           <LogoContainer to="/" aria-label="homepage">
           <img src={`${process.env.PUBLIC_URL}/img/icons/logoText.png`} alt={"logo"} width={"150"} height={"100"} />
           </LogoContainer>
-          
+
           <NotHidden>
             <MenuItem />
           </NotHidden>
           <Burger onClick={showDrawer}>
             <Outline />
           </Burger>
-        
-            
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-           
+
+            <LanguageSwitchContainer>
+              <LanguageSwitch onClick={() => handleChange("en")}>
+                <SvgIcon
+                  src="united-states.svg"
+                  aria-label="homepage"
+                  width="30px"
+                  height="30px"
+                />
+              </LanguageSwitch>
+              <LanguageSwitch onClick={() => handleChange("es")}>
+                <SvgIcon
+                  src="spain.svg"
+                  aria-label="homepage"
+                  width="30px"
+                  height="30px"
+                />
+              </LanguageSwitch>
+            </LanguageSwitchContainer>
         </Row>
         <Drawer closable={false} visible={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
@@ -135,7 +116,7 @@ const Header = ({ t }: any) => {
           </Col>
           <MenuItem />
         </Drawer>
-        
+
       </Container>
     </HeaderSection>
   );

@@ -1,15 +1,12 @@
-import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
-import homeimage from "../../img/homeimage.jpeg"
-import grapimage from "../../img/grapimage.jpg"
-import productLuach from "../../img/productLuach.jpeg"
-import equiptment from "../../img/equiptment.png"
-import contactUs from "../../img/contactUs.jpeg"
+import homeimage from "../../img/homeimage.jpeg";
+import grapimage from "../../img/grapimage.jpg";
+import productLuach from "../../img/productLuach.jpeg";
+import equiptment from "../../img/equiptment.png";
+import contactUs from "../../img/contactUs.jpeg";
+import { lazy } from "react";
+
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -35,7 +32,6 @@ const Home = () => {
         content1={"middleText1"}
         button={"middleButton"}
       />
-      
       <ContentBlock
         type="left"
         title={"aboutTitle"}

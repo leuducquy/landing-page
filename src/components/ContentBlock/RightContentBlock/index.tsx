@@ -1,6 +1,5 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../../common/SvgIcon";
 import { Button } from "../../../common/Button";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
@@ -17,10 +16,9 @@ const RightBlock = ({
   title,
   content,
   button,
-  icon,
   t,
   id,
-  image
+  image,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -28,6 +26,7 @@ const RightBlock = ({
       behavior: "smooth",
     });
   };
+
   return (
     <RightBlockContainer>
       <Fade direction="right">
@@ -38,10 +37,10 @@ const RightBlock = ({
               <Content><Trans i18nKey={t(content)} components={{ 1: <br /> }} /></Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
-                  button.map((item: any, id: number) => {
+                  button.map((item: any, key: number) => {
                     return (
                       <Button
-                        key={id}
+                        key={key}
                         color={item.color}
                         fixedWidth={true}
                         onClick={() => scrollTo("about")}
@@ -54,8 +53,7 @@ const RightBlock = ({
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            {/* <SvgIcon src={icon} width="100%" height="100%" /> */}
-            <img src={image}  style={{ width: "100%", height: "100%" }} alt="Logo" />
+            <img src={image} style={{ width: "100%", height: "100%" }} alt="Logo" />
           </Col>
         </Row>
       </Fade>

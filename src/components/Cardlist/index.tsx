@@ -1,6 +1,6 @@
 // Import necessary components from Material-UI
 import React from 'react';
-import { Card, CardContent, Typography, CardActionArea, CardMedia, Grid } from '@mui/material';
+import { Card, CardContent, Typography, CardActionArea, CardMedia } from '@mui/material';
 import './card.css';
 interface CardData {
   id: number;

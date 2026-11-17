@@ -8,19 +8,13 @@ import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
-import { ContactContainer, FormGroup, Span, ButtonContainer,SocialLink } from "./styles";
-import Container from "../../common/Container";
-import { FooterContainer } from "../Footer/styles";
+import { ContactContainer, FormGroup, Span, ButtonContainer, SocialLink } from "./styles";
 import { SvgIcon } from "../../common/SvgIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookMessenger, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-import { faPhone} from '@fortawesome/free-solid-svg-icons';
-import zaloIcon from "../../img/icons8-zalo-48.png"
-interface SocialLinkProps {
-  href: string;
-  icon: any;
-}
-const Contact = ({ title, content, id, t,image }: ContactProps) => {
+import { faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
+const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
   ) as any;
@@ -33,18 +27,6 @@ const Contact = ({ title, content, id, t,image }: ContactProps) => {
       </Zoom>
     );
   };
-  // const SocialLink = ({ href, icon }: SocialLinkProps) => {
-  //   return (
-  //     <a
-  //       href={href}
-  //       target="_blank"
-  //       rel="noopener noreferrer"
-       
-  //     >
-  //        <FontAwesomeIcon icon={faZalo} /> Liên hệ qua Zalo
-  //     </a>
-  //   );
-  // };
 
   return (
     <ContactContainer id={id}>
@@ -73,12 +55,7 @@ const Contact = ({ title, content, id, t,image }: ContactProps) => {
               </Row>
               </Col>
         </Col>
-       
-              
-             
-          
-        
- 
+
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right">
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>

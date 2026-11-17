@@ -2,23 +2,14 @@ import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
-
-import i18n from "i18next";
 import {
   FooterSection,
   Title,
-  NavLink,
-  Extra,
-  LogoContainer,
   Para,
   Large,
   Chat,
   Empty,
-  FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
 } from "./styles";
 
 interface SocialLinkProps {
@@ -27,7 +18,6 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
- 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
       <a
@@ -49,7 +39,6 @@ const Footer = ({ t }: any) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-            
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
@@ -66,7 +55,6 @@ const Footer = ({ t }: any) => {
                 {t("Software Principles")}
               </Large>
             </Col>
-            
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -85,59 +73,29 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Blog")}
               </Large>
-             
               <Large left="true" to="/">
                 {t("Careers & Culture")}
               </Large>
             </Col>
-            
+          </Row>
+          <Row justify="center">
+            <Col>
+              <SocialLink
+                href="https://www.facebook.com"
+                src="/images/facebook.svg"
+              />
+              <SocialLink
+                href="https://www.twitter.com"
+                src="/images/twitter.svg"
+              />
+              <SocialLink
+                href="https://www.linkedin.com"
+                src="/images/linkedin.svg"
+              />
+            </Col>
           </Row>
         </Container>
       </FooterSection>
-      {/* <Extra>
-         <Container border={true}> 
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
-              />
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
-            </FooterContainer>
-          </Row>
-        </Container> 
-      </Extra> */}
     </>
   );
 };
